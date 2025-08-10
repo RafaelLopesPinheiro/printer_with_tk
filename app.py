@@ -111,6 +111,7 @@ class PedidoSucosApp:
                 option=self.type_var.get()
             )
             messagebox.showinfo("Impressão enviada", "Os dados foram enviados para a impressora com sucesso!")
+            self.table_var.set("MESA ")
         return callback
 
 def main():
@@ -119,4 +120,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
+
     main()
